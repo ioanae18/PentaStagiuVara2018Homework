@@ -40,13 +40,13 @@ namespace Homework03
 			Post post4 = new Post(account4, "This is my new message!", new DateTime(21, 01, 1997));
 
 			post1.ShowPosts();
-			post1.ShowCommonBoard();
+			post1.ShowInDescOrder();
 			post2.ShowPosts();
-			post2.ShowCommonBoard(); 
+			post2.ShowInDescOrder(); 
 			post3.ShowPosts(); 
-			post3.ShowCommonBoard();
+			post3.ShowInDescOrder();
 			post4.ShowPosts();
-			post4.ShowCommonBoard();
+			post4.ShowInDescOrder();
 
 			Console.ReadKey();
 

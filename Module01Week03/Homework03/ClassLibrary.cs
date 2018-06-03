@@ -51,21 +51,25 @@ namespace Homework03
 				//showing posts
 				public void ShowPosts()
 				{
+					int count = 0;
 					foreach (Post post in posts)
 					{
-						Console.WriteLine("Author: " + post.Author + "The message is: " + post.Message 
+						Console.WriteLine();
+						Console.WriteLine(count++ + "Author: " + post.Author + "The message is: " + post.Message 
 							+ "The time when the message was posted : " + post.PostTime);
 					}
 				}
 
 				//showing the posts in descending order
-				public void ShowCommonBoard()
+				public void ShowInDescOrder()
 				{
+					int count = 0;
 					List<Post> aux = posts;
 					aux.Reverse();
 					foreach (Post post in posts)
 					{
-						Console.WriteLine("The author is: " + post.Author + "The message is: " + post.Message 
+						Console.WriteLine();
+						Console.WriteLine(count++ + "The author is: " + post.Author + "The message is: " + post.Message 
 							+ "The time when the message was posted: " + post.PostTime);
 					}
 				}
