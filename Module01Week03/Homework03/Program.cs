@@ -42,8 +42,8 @@ namespace Homework03
 			post1.ShowPosts();
 			post1.ShowCommonBoard();
 			post2.ShowPosts();
-			post2.ShowCommonBoard(); post1.ShowPosts();
-			post3.ShowCommonBoard(); post1.ShowPosts();
+			post2.ShowCommonBoard(); 
+			post3.ShowCommonBoard(); 
 			post3.ShowCommonBoard();
 			post4.ShowPosts();
 			post4.ShowCommonBoard();
