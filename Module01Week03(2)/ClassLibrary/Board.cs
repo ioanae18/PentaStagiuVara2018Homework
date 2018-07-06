@@ -26,9 +26,9 @@ namespace ClassLibrary
 		}
 
 		// Method for adding a new user in User List.
-		public void AddPerson(string email, string firstName, string lastName, DateTime birthDate)
+		public void AddPerson(string firstName, string lastName, string username, DateTime birthDate, string email)
 		{
-			Person newPerson = new Person(lastName, firstName, birthDate, email);
+			Person newPerson = new Person(lastName, firstName, username, birthDate, email);
 			personList.Add(newPerson);
 			NewAddedUser += PostNewUserAdded;
 			NewUserJoined(newPerson);

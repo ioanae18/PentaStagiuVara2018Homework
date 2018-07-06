@@ -11,8 +11,8 @@ namespace ClassLibrary
 		public Person Author { get; private set; }
 		public string Message { get; private set; }
 		public DateTime PostTime { get; private set; }
-		public string Text { get; private set; }
 		public static List<Post> posts = new List<Post>();
+		public static List<Person> persons = new List<Person>();
 		private bool changed = false;
 
 		//Constructor for Post
@@ -49,16 +49,35 @@ namespace ClassLibrary
 			}
 		}
 
+		public static void CreatePost()
+		{
+			string author = Person.LoggedInUser();
+
+			Console.Write("Please enter your post body: ");
+			string postMessage = Console.ReadLine();
+
+			Post post = new Post(author, postMessage, DateTime.Now);
+			AddToBoard(post);
+
+			Console.WriteLine();
+		}
+
+		public static void AddToBoard(Post post)
+		{
+			posts.Add(post);
+		}
+
+
 		public void EditPost(string newText)
 		{
 			changed = true;
-			this.Text = newText;
+			this.Message = newText;
 		}
 
 		//@override display method
 		public override string ToString()
 		{
-			return "Message: " + Text;
+			return "Message: " + Message;
 		}
 	}
 }
