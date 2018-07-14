@@ -22,6 +22,7 @@ namespace Module02Week01
 			FileStreamRun();
 			StreamReaderRun();
 			StreamWriterRun();
+			AddPerson();
 		}
 
 		private static void FileStreamRun()
@@ -115,6 +116,17 @@ namespace Module02Week01
 					}
 					counter += 1;
 				}
+			}
+		}
+
+		//Method for adding names 
+		private static void AddPerson()
+		{
+			string[] newPeople = { "Jane", "Weller" };
+
+			foreach (string name in newPeople)
+			{
+				people.Add(name);
 			}
 		}
 
