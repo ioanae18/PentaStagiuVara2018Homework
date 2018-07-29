@@ -1,3 +1,6 @@
+About the program
+
+
 C# is a modern object-oriented programming language developed by Microsoft and designed to be simple and easy to use. 
 Since C# is a high level language, it reads somewhat closer to English. In addition, C# abstracts away (i.e. handles for you) 
 most of the complex details of the machine (computer) so you can focus on programming instead of worrying about the little details many 
